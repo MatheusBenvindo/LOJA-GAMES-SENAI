@@ -1,0 +1,79 @@
+<section id="section-login">
+  <h1>Login</h1>
+  <div class="d-flex justify-content-center">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <p>
+        <label for="usuario">Nome: </label>
+        <input id="usuario" name="usuario" required type="text"
+          placeholder="Insira o seu usuário" class="form-control" 
+          [(ngModel)]="usuarioLogin" #usuarioInput="ngModel" />
+        <span class="text-danger" *ngIf="usuarioInput.invalid && usuarioInput.touched">
+          Nome de usuário é obrigatório
+        </span>
+      </p>
+      <p>
+        <label for="senha">Senha: </label>
+        <input id="senha" name="senha" required type="password"
+          placeholder="Insira a sua senha" class="form-control" 
+          [(ngModel)]="senhaLogin" #senhaInput="ngModel" />
+        <span class="text-danger" *ngIf="senhaInput.invalid && senhaInput.touched">
+          Senha é obrigatória
+        </span>
+      </p>
+      <p>
+        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+      </p>
+    </form>
+  </div>
+</section>
+
+<section id="section-cadastro">
+  <div id="botao-cadastrar">
+    <button type="button" class="btn btn-info" (click)="toggleCadastro()">
+      Não é cadastrado ainda? Cadastre-se
+    </button>
+  </div>
+  <div id="form-cadastrar" [hidden]="!mostrarFormCadastro">
+    <h1>Criar minha conta</h1>
+    <p>Informe os seus dados abaixo para criar sua conta.</p>
+
+    <div class="d-flex justify-content-center">
+      <form (ngSubmit)="cadastro()" #cadastroForm="ngForm">
+        <p>
+          <label for="usuarioCadastro">Usuário: </label>
+          <input id="usuarioCadastro" name="usuarioCadastro" required type="text"
+            placeholder="ex. nome de usuário" class="form-control" 
+            [(ngModel)]="usuarioCadastro" #usuarioCadastroInput="ngModel" />
+          <span class="text-danger" *ngIf="usuarioCadastroInput.invalid && usuarioCadastroInput.touched">
+            Nome de usuário é obrigatório
+          </span>
+        </p>
+        <p>
+          <label for="email">E-mail: </label>
+          <input id="email" name="email" required type="email"
+            placeholder="seu@email.com.br" class="form-control" 
+            [(ngModel)]="emailCadastro" #emailInput="ngModel" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          <span class="text-danger" *ngIf="emailInput.invalid && emailInput.touched">
+            E-mail inválido
+          </span>
+        </p>
+        <p>
+          <label for="senhaCadastro">Senha: </label>
+          <input id="senhaCadastro" name="senhaCadastro" required type="password"
+            placeholder="mínimo de 6 caracteres" class="form-control" 
+            [(ngModel)]="senhaCadastro" #senhaCadastroInput="ngModel" 
+            minlength="6" />
+          <span class="text-danger" *ngIf="senhaCadastroInput.invalid && senhaCadastroInput.touched">
+            A senha deve ter no mínimo 6 caracteres
+          </span>
+        </p>
+        <p>
+          <button type="submit" class="btn btn-primary" [disabled]="cadastroForm.invalid">
+            Cadastrar
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

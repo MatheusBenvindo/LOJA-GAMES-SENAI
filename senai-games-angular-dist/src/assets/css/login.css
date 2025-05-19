@@ -1,0 +1,77 @@
+/* Estilo Geral */
+body {
+    background-color: #4075E9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Seção de Login e Cadastro */
+#section-login, #section-cadastro {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+#section-login h1, #section-cadastro h1 {
+    color: #004080;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Inputs e Botões */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.btn-primary, .btn-info {
+    background-color: #004080;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-info:hover {
+    background-color: #003060;
+}

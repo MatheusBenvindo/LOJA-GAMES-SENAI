@@ -1,0 +1,314 @@
+/* Seção Navbar */
+.navbar {
+    background-color: #110675;
+    border-bottom: 4px solid #000;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Noto Serif;
+    background-color: #000;
+    font-size: 1.5em; /* Ajustado para ser mais responsivo */
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Seção Corpo */
+body {
+    background-color: #4075E9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Seção Banners */
+#section-banners {
+    margin-top: 10vh;
+}
+
+.custom-text {
+    text-align: center;
+    margin-bottom: 4vh;
+    color: #0c0101;
+    font-size: 5vw; /* Ajustado para ser responsivo */
+    font-weight: bold;
+    font-family: Noto Serif;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-color: #000;
+    border-radius: 10px;
+}
+
+/* Seção Categorias */
+#section-categorias {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4vw;
+}
+
+.categoria-item {
+    text-align: center;
+    width: calc(14vw * 0.7); /* Reduzido em 30% */
+    max-width: calc(210px * 0.7); /* Reduzido em 30% */
+}
+
+.categoria-item img {
+    width: 100%;
+    height: auto;
+    border: calc(4.2px * 0.7) solid #000; /* Reduzido em 30% */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.categoria-item img:hover {
+    transform: scale(1.1);
+}
+
+.categoria-item p {
+    margin-top: calc(1.4vh * 0.7); /* Reduzido em 30% */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: calc(1.05em * 0.7); /* Reduzido em 30% */
+}
+
+/* Seção Mais Vendidos */
+.section-maisvendidos {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.row {
+    margin-bottom: 6vh;
+    justify-content: center;
+}
+
+.maisvendidos {
+    text-align: center;
+}
+
+.square-image {
+    width: 20vw; /* Ajustado para ser responsivo */
+    height: 20vw; /* Ajustado para ser responsivo */
+    max-width: 300px;
+    max-height: 300px;
+    border: 4px solid black;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.maisvendidos p {
+    margin-top: 2vh;
+    font-size: 1.5em; /* Ajustado para ser responsivo */
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.maisvendidos img {
+    width: 100%;
+    height: auto;
+    border: 6px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.maisvendidos img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Gamer Setup */
+#section-gamer-setup {
+    background-color: black;
+    color: white;
+    padding: 4vw;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gamer-specs {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+}
+
+h2.custom-text {
+    color: #ffffff;
+    font-size: 3vw; /* Ajustado para ser responsivo */
+    font-weight: bold;
+    text-align: center;
+}
+
+.setup-image {
+    max-width: 100%;
+    width: 80vw; /* Ajustado para ser responsivo */
+    height: auto;
+    border: 6px solid #000000;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Rodapé Geral */
+#footer {
+    background-color: #110675; /* Fundo azul escuro */
+    color: white; /* Texto branco */
+    padding: 6vw; /* Espaçamento interno proporcional */
+    width: 100%; /* Ocupa toda a largura */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
+}
+
+/* Layout Flexível do Rodapé */
+#footer .row {
+    display: flex; /* Layout em flexbox */
+    justify-content: space-between; /* Espaço entre os lados */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    flex-wrap: wrap; /* Permite quebra em dispositivos menores */
+}
+
+/* Coluna da Esquerda */
+.footer-left {
+    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; /* Divide o espaço de forma proporcional */
+    padding-left: 2vw; /* Espaçamento interno à esquerda */
+}
+
+.footer-left img {
+    width: 150px; /* Tamanho ajustado da imagem */
+    height: auto; /* Mantém proporções */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+.footer-left p {
+    margin: 5px 0; /* Espaçamento entre linhas de texto */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+/* Coluna da Direita */
+.footer-right {
+    text-align: center; /* Centraliza o conteúdo da coluna */
+    flex: 1; /* Divide o espaço de forma proporcional */
+    padding-right: 2vw; /* Espaçamento interno à direita */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Links das Redes Sociais */
+.social-links {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Layout em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaço entre os links */
+    padding: 0; /* Remove espaçamento padrão */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+.social-links li {
+    display: flex; /* Alinha os ícones e textos verticalmente */
+    flex-direction: column; /* Coloca ícones acima do texto */
+    align-items: center; /* Centraliza ícones e textos */
+}
+
+.social-icon {
+    width: 50px; /* Tamanho dos ícones */
+    height: 50px; /* Altura dos ícones */
+    margin-bottom: 5px; /* Espaço abaixo dos ícones */
+}
+
+.footer-credit {
+    margin-top: 10px; /* Espaço acima do texto dos créditos */
+    font-size: 14px; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding: 0;
+    margin: 3vh 0;
+}
+
+.social-links li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    width: 10vw; /* Ajustado para ser responsivo */
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+.senai-fim {
+    width: 20vw; /* Ajustado para ser responsivo */
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+.footer-credit {
+    margin-top: 3vh;
+    font-size: 1.5em; /* Ajustado para ser responsivo */
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 1.2em;
+    }
+
+    .custom-text {
+        font-size: 6vw;
+    }
+
+    .categoria-item {
+        width: 40vw;
+    }
+
+    .square-image {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    h2.custom-text {
+        font-size: 4vw;
+    }
+
+    .setup-image {
+        width: 90vw;
+    }
+
+    .social-icon {
+        width: 15vw;
+    }
+
+    .senai-fim {
+        width: 30vw;
+    }
+}
+
