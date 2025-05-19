@@ -61,71 +61,22 @@
 <section id="section-maisvendidos" class="container">
   <h2 class="custom-text">Mais vendidos</h2>
   <div class="row text-center">
-    <div class="col-2">
+    <div class="col-2" *ngFor="let i of [1, 2, 3, 4, 5]">
       <div class="maisvendidos">
-        <img src="assets/img/m1.jpg" alt="Monitores" class="square-image">
-        <p>Produto 1</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m2.jpg" alt="Notebooks" class="square-image">
-        <p>Produto 2</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m3.jpg" alt="Jogos" class="square-image">
-        <p>Produto 3</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m4.jpg" alt="Desktops" class="square-image">
-        <p>Produto 4</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m5.jpg" alt="Peças e Acessórios" class="square-image">
-        <p>Produto 5</p>
+        <img src="assets/img/m{{i}}.jpg" alt="Produto {{i}}" class="square-image">
+        <p>Produto {{i}}</p>
       </div>
     </div>
   </div>
   <div class="row text-center mt-3">
-    <div class="col-2">
+    <div class="col-2" *ngFor="let i of [6, 7, 8, 9, 10]">
       <div class="maisvendidos">
-        <img src="assets/img/m6.jpg" alt="Mouse" class="square-image">
-        <p>Produto 6</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m7.jpg" alt="Teclados" class="square-image">
-        <p>Produto 7</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m8.jpg" alt="Headsets" class="square-image">
-        <p>Produto 8</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m9.jpg" alt="Impressoras" class="square-image">
-        <p>Produto 9</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="maisvendidos">
-        <img src="assets/img/m10.jpg" alt="Webcam" class="square-image">
-        <p>Produto 10</p>
+        <img src="assets/img/m{{i}}.jpg" alt="Produto {{i}}" class="square-image">
+        <p>Produto {{i}}</p>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Seção de setup gamer -->
 <section id="section-gamer-setup" class="container">

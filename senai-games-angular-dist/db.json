@@ -1,0 +1,25 @@
+{
+  "produtos": [
+    {
+      "id": "2",
+      "produto": "Horizon Forbidden West",
+      "descricao": "Aloy explora um novo mundo pós-apocalíptico",
+      "foto": "horizon.jpg",
+      "preco": 249.99
+    },
+    {
+      "id": "3",
+      "produto": "Spider-Man 2",
+      "descricao": "Peter Parker e Miles Morales enfrentam novos vilões",
+      "foto": "spiderman.jpg",
+      "preco": 279.99
+    },
+    {
+      "id": null,
+      "produto": "Spider-Man 2\t",
+      "descricao": "Peter Parker e Miles Morales enfrentam novos vilões",
+      "foto": "",
+      "preco": 279.99
+    }
+  ]
+}

@@ -1,15 +1,13 @@
-# Node.js dependencies
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Angular build outputs
 dist/
 out-tsc/
 .angular/
+.angular/cache/
 
-# IDE and editor settings
 .vscode/
 .idea/
 *.suo
@@ -17,29 +15,27 @@ out-tsc/
 *.njsproj
 *.sln
 
-# System files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Logs
+
 *.log
 
-# Compiled files
 *.class
 *.dll
 *.exe
 *.o
 *.so
 
-# TypeScript
 *.tsbuildinfo
 
-# Environment files
+
 .env
 .env.local
 .env.*.local
 
-# Temporary files
+
 *.tmp
 *.temp
 *.bak
@@ -49,13 +45,19 @@ Thumbs.db
 *.seed
 *.pid.lock
 
-# Coverage reports
 coverage/
 
-# Test outputs
 test-results/
 
-# Miscellaneous
+# JSON Server files
+# Removido para incluir db.json no repositório
+# db.json
+*.json.backup
+
+# CSS generated files
+# Removido para incluir arquivos CSS manuais no repositório
+# src/assets/css/*.css
+
 *.lock
 *.gz
 *.zip
